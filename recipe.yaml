@@ -36,6 +36,12 @@ tasks:
 
   # Download basic resources and ESX dependencies
 
+  # SERVER MAPPING
+  - action: download_github
+    dest: ./resources/[mapping]/housing-shells
+    ref: main
+    src: https://github.com/quasar-scripts/k4mb1shellstarter
+
   - action: connect_database
 
   - action: download_github
